@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="folha_estilo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Explore o MUNDO</span>
+        </div>
+        <div class="navegacao">
+            <nav class="menu-links">
+                <a href="index.html">Início</a>
+                <a href="destino.html">Destinos</a>
+                <a href="sobre_nos.html">Sobre</a>
+                <a href="">Contato</a>
+            </nav>
+            <div class="redes-sociais">
+                <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" class="face"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <main class="corpo">
+        <h1 class="formu">PREENCHA O FORMULÁRIO</h1>
+        <p class="subititulo_formu">Para entrar em contato</P>
+
+        <div class="area-inscrição">
+
+            <form action="/processar cadastro" method="post" class="coluna-form"> 
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required minlength="3" maxlength="50"> <br>
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required minlength="11" maxlength="14"><br>
+
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="email" name="email"  placeholder="exemplo@dominio.com" required><br><br>
+
+                <label for="data_nasc">Data de Nascimento:</label>
+                <input type="date" id="data_nasc" name="data_nascimento" min="1900-01-01"  max="2026-12-31" required><br><br>
+
+                <label >Qual o motivo do contato</label><br>
+
+                <select name="motivo" id="motivo" required>
+                    <option value=""disa select>Selecione o Motivo</option>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvidas">Duvidas sobres pacotes</option>
+                    <option value="parcelas">Parcelamentos</option>
+                    <option value="outros">Outros</option>
+                </select><br>
+
+                <label for="outros">Outros</label>
+                <input type="text" id="outros" name="outros" placeholder="Digite os motivos" required minlength="3" maxlength="50"> <br><br>
+
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Li e aceito os Termos</label><br><br>
+
+                <button type="submit" class="btn-enviar"> Enviar </button>
+                <button type="reset" class="btn-limpar"> Limpar Tudo </button>
+
+            </form>
+
+            
+                <img class="poster4" src="https://images.unsplash.com/photo-1572573385781-2fd4f8c1389e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="avião">
+
+        </div>
+    
+    </main>
+
+        <footer class="footer">
+            <p class="legenda">© 2026 Explore o Mundo - Todos os direitos reservados</p>
+        </footer>
+
+
+</body>
+</html>

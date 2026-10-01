@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(185, 230, 205);
+    color: black;
+    line-height: 1.6; /* Espaçamento entre linha   */
+}
+
+.cabecalho{
+    background-color: rgb(27, 95, 2);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(247, 245, 243);
+}
+
+.navegacao{
+    display: flex;
+    gap: 30px;
+}
+
+.menu-links a{
+    color: #f2ecec;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 10px;
+    border-left: 1px solid #ffffff;
+    padding-left:  20px;
+}
+
+.redes-sociais a{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.menu-links a:hover{
+    color: rgb(0, 0, 0);
+}
+.redes-sociais a:hover{
+    transform: scale(1.3);/*Aplica efeito de zoom no elemneto*/
+}
+
+.redes-sociais a.whatsapp:hover{color: #25D366;}
+
+.redes-sociais a.face:hover{color: #1877F2;}
+
+.redes-sociais a.insta:hover{color: #e130d8 ;}
+
+.redes-sociais a.twitter:hover{color: black;}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(0.60);
+}
+
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.texto h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.texto p{
+    font-size: 16px;
+}
+
+.container{
+    max-width: 900px;
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+.foto1{
+    width: 900px;
+    height: 450px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    
+}
+
+.legenda1{
+    background-color: #f2ecec;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 20px;
+}
+
+.titulo{
+    font-size: 36px;
+    color: #156501;
+}
+
+.subtitulo{
+    font-size: 24px;
+    color: #00be10;
+    margin-bottom: 30px;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: #0e420a;
+    color: #e7e9ee;
+    text-align: center;
+    padding: 15px 40px;
+    border-top: 2px solid #145a9b ;
+}
+
+.destinos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap :25px;
+    margin-bottom: 40px;
+} 
+
+ .cards{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    border-radius: 20px;
+    width: 600px;
+    margin-left: 10px;
+    box-shadow: 0 5px 15px #b5b5b5;
+}
+
+.imagem2{
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.lugares{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.local{
+    font-size: 12px;
+    color: rgb(0, 188, 6);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:  4px;
+}
+
+.nome{
+    font-size: 30px;
+    margin: 5px 0 10px 0;
+}
+
+.discricão{
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 1;
+    flex-grow: 1;
+}
+
+.valor{
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.valores{
+    display: inline-block;
+    background-color: #007d19;
+    padding:  4px 8px;
+    border-radius: 4px;
+    margin-left: 4px;
+    color: rgb(254, 255, 254);
+}
+
+.botao-comprar{
+    display: block;
+    text-align: center;
+    background-color: #00b646;
+    color: #ffffff;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-comprar:hover{
+    background-color: #01431e;
+}
+
+.viagens{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.pilares{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap :25px;
+    color: aliceblue;
+    margin: 0 50px 10px 50px;
+}
+
+.explicacao{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+
+}
+
+.nome-conteudo{
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+}
+
+.texto4{
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.texto_nos{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #949494;
+}
+
+.conteudo-div{
+    text-align: center;
+}
+.titulo_nos{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.formu{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subititulo_formu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.area-inscrição{
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    width: 1000px;
+    height: 725px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+
+.coluna-form{
+    flex: 1; 
+    min-width: 450px;
+    background-color: rgb(2, 138, 0);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #707070;
+    margin-left: 85px;
+}
+
+.coluna-midia{
+    flex: 1;
+    min-width: flex;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.coluna-form label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #0e0d0d;
+}
+
+.coluna-form input[type="text"],
+.coluna-form input[type="password"],
+.coluna-form input[type="email"],
+.coluna-form input[type="date"],
+.coluna-form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.poster4{
+    width: 500px;
+    height: 725px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
